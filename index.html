@@ -39,7 +39,7 @@
     <br />
     <small>Small</small>
     <br />
-    <del>Deleted</del>
+    <del>Deleted</del>  
     <br />
     <ins>Inserted</ins>
     <br />
@@ -65,9 +65,12 @@
         <ul><li>red</li>
         <li>green</li>
         <li>brown</li>
+        <li>yellow</li>
     </ul>
         <li>Banana</li>
         <li>Mango</li>
+        <li>Orange</li>
+
     </ul>
     <ol>
         <li> Apple</li>
@@ -83,22 +86,26 @@
             <th>Name</th>
             <th>Roll Number</th>
             <th>City</th>
+            <th>Age</th>
         </tr>
         <tr>
             <td>Aditya Raj Pandey</td>
             <td>12212813</td>
             <td>Gorakhpur</td>
+            <td>20</td>
         </tr>
         <tr>
             <td>Raj Pandey</td>
             <td>12212814</td>
             <td>Gorakhpur</td>
+            <td> 23</td>
         </tr>
      </table>
 
      <form action = "/action.php">
         <input type = "text" placeholder = "Username" />
         <input type = "password" placeholder = "Password" />
+
         <label for="101">
             <input type = "radio" value = "class XI" name = "class" id = "101" />Class XI 
         </label>
@@ -125,14 +132,35 @@
         <br />
         <textarea name="feedback" id = "101" placeholder = "please give your feedback"></textarea>
 
+        <br />
+        <select name="city" id="city">
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="Click Me" onclick="alert('Button Clicked!')" />
+        <input type="hidden" name="hiddenField" value="hiddenValue" />
+        <input type="file" name="fileUpload" id="fileUpload" />
+        <br />
+        <input type="color" name="colorPicker" id="colorPicker" />
+        <input type="date" name="datePicker" id="datePicker" />
+        <input type="time" name="timePicker" id="timePicker" />
+        <input type="number" name="quantity" id="quantity" min="1" max="10" />
+        <input type="range" name="volume" id="volume" min="0"
+                max="100" step="1" />
+        <input type="email" name="email" id="email" placeholder="Enter your email" />
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" />
+        <input type="search" name="search" id="search" placeholder="Search..." />
+        <input type="password" name="password" id="password" placeholder="Enter your password" />
+        <input type="submit" value="Submit Form" />
+        <input type="reset" value="Reset Form" />
+    
      </form> 
-
-
- 
-
-
-
-
-
 </body>
 </html>
