@@ -23,17 +23,20 @@ body{
 }
 .boxes{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     font-size: 39px;
     background-color: blue;
     border: 0.2rem solid black;
 }
 #box1{
+    align-items: center;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end:4;
 }
 #box2{
+    align-items: end;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -41,22 +44,31 @@ body{
     ;
 }
 #box3{
+    justify-content:end;
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start: 2;
     grid-row-end: 6;
 }
 #box4{
+    align-items: center;
+
     grid-column-start: 1;
     grid-column-end: 2;
 }
 #box5{
+    justify-content: center;
+    align-items: end;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 6;
 }
 #box6{
+    justify-content: center;
+    align-items: end;
+    text-shadow: 2px 2px 4px #000000;
+    /* align-items: ; */
     grid-column-start: 1;
     grid-column-end: 4;
 }
